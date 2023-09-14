@@ -12,7 +12,7 @@ const TransactionTile = (props) => {
   useEffect(() => {
     if (amount < 0) {
       const fetchAccount = () => {
-        axios.get(`http://127.0.0.1:5000/account/${account_id}`).then(response => {
+        axios.get(`http://127.0.0.1:5000/accounts/${account_id}`).then(response => {
           setBalance(response.data.balance);
         }).catch(e => {
           console.error(e.errorMessage);
