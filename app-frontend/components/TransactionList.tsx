@@ -48,9 +48,9 @@ const TransactionList = () => {
   <div className="flex flex-wrap w-fit mt-6 sm:w-full">
     <ul>
       {transactions.map((transaction) => (
-        <>
+        <li key={transaction.transaction_id}>
           <TransactionTile transaction={transaction}/>
-        </>
+        </li>
       ))}
     </ul>
   </div>

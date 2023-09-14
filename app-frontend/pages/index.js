@@ -26,9 +26,6 @@ export default function Home() {
       <div className="align-self: flex-end; bg-pink-200">
         <Footer />
       </div>
-      <div className="align-self: flex-end; bg-pink-200">
-        <Footer />
-      </div>
     </div>
   )
 }
